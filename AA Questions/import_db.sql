@@ -69,6 +69,10 @@ INSERT INTO
   questions (id, title, body, user_id)
 VALUES
   (2, 'What up?', 'How you doin today?', 1);
+INSERT INTO
+  questions (id, title, body, user_id)
+VALUES
+  (3, 'Magnets?', 'How do they work?', 3);
 
 INSERT INTO
   question_follows (id, user_id, question_id)
@@ -99,3 +103,13 @@ INSERT INTO
   question_likes (id, user_id, question_id)
 VALUES
   (1, 3, 1);
+
+INSERT INTO
+  question_likes (id, user_id, question_id)
+VALUES
+  (2, 2, 2);
+
+INSERT INTO
+  question_likes (id, user_id, question_id)
+VALUES
+  (3, 2, 1);

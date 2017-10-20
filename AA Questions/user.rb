@@ -40,7 +40,15 @@ class User
   end
 
   def average_karma
-
+    options =
+    QuestionsDatabase.instance.execute(<<-SQL, @id)
+    SELECT
+      questions.id, COUNT(DISTINCT question_likes.id)
+    FROM
+      questions
+    LEFT OUTER JOIN
+      question_likes ON questions.id = question_likes.question_id
+    SQL
   end
 
 end

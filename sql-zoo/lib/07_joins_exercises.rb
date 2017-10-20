@@ -170,7 +170,7 @@ def films_by_cast_size
       movies.yr = 1978
     GROUP BY
       movies.title
-    ORDER BY
+      ORDER BY
       COUNT(castings.actor_id) DESC, title ASC
 
   SQL

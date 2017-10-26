@@ -1,0 +1,10 @@
+.section-links {
+  display: flex;
+  // flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.section-links a:hover{
+  background-color: $light-gray;
+}

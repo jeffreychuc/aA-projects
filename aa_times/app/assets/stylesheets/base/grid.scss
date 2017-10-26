@@ -1,0 +1,46 @@
+.col {
+  display: flex;
+}
+
+/* Attribute selector targeting all elements
+with a class attribute containing 'col-' */
+[class*='col-'] {
+  padding-right: 20px;
+}
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+.col-1 {
+  flex: 1;
+}
+
+.col-2 {
+  flex: 2;
+}
+
+.col-3 {
+  flex: 3;
+}
+
+.col-4 {
+  flex: 4;
+}
+
+.col-5 {
+  flex: 5;
+}
+
+
+.flex-test  {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* CSS Day 6 media queries */
+@media all and (max-width: 1000px) {
+  [class*='col-'] {
+    width: 100%;
+  }
+}

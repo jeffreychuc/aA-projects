@@ -1,0 +1,35 @@
+/* PHASE 1: Header */
+body {
+  font-family: 'Roboto',sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.header {
+  display: flex;
+  background-color: red;
+  justify-content: space-around;
+  color: white;
+  align-items: center;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.nav_links {
+  display: flex;
+}
+
+.nav_links li{
+  padding: 10px 20px 10px 20px;
+  border-right: 1px white solid;
+}
+
+.logo {
+  padding: 10px 20px 10px 20px;
+  border-left: 1px white solid;
+  border-right: 1px white solid;
+}
+
+.nav_links:first-child {
+  border-left: 1px white solid;
+}

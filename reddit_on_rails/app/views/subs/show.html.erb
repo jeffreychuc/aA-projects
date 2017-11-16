@@ -1,0 +1,10 @@
+<h1>Subs#show</h1>
+<p>Find me in app/views/subs/show.html.erb</p>
+
+<h2>Welcome to <%= @sub.title %></h2>
+
+<ul>
+<% @sub.posts.each do |post| %>
+  <li> <%=post.title%> <%= post.url %> <%= post.content %> <%= post.author.username %></li>
+<% end %>
+</ul>

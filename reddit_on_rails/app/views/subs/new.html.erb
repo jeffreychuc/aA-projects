@@ -1,0 +1,14 @@
+<h1>Subs#new</h1>
+<p>Find me in app/views/subs/new.html.erb</p>
+
+<form action="<%= subs_url %>" method="post">
+<h2>Make a new sub</h2>
+<label>Title of your new sub
+<input type="text" name="sub[title]" value="">
+</label>
+
+<label>Description of your new sub
+<input type="text" name="sub[description]" value="">
+</label>
+
+<input type="submit" value="Create!">
